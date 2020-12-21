@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top And Sude Nav Bar</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+		}
+		.header{
+			padding: 15px;
+			text-align: center;
+			color: white;
+			background-color: rgba(0,100,230,0.8);
+		}
+		.topmenu{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			background-color: gray;
+			overflow: hidden;
+		}
+		.topmenu li{
+			float: left;
+		}
+		.topmenu li a{
+			color: white;
+			background-color: #448899;
+			text-align: center;
+			padding: 16px;
+            text-decoration: none;
+            display: inline-block;
+		}
+		.topmenu li a:hover{
+			background-color: green;
+		}
+		.topmenu li a.active{
+			color: white;background-color: red;
+		}
+		.column{
+			float: left;
+			padding: 15px;
+		}
+		.clearfix::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.sidemenu{
+			width: 25%;
+		}
+		.content{
+			width: 75%;
+		}
+		.sidemenu ul{
+			list-style-type: none;
+			margin:0;
+			padding:0;
+		}
+		.sidemenu ul li a{
+			text-decoration: none;
+			padding: 8px;
+			margin-bottom: 4px;
+			color: white;
+			background-color: orange;
+			display: block;
+		}
+		.sidemenu li a :hover{
+			background-color: black;
+		}
+		.sidemenu li a.active{
+			color: white;
+			background-color:#444 ;
+		}
+		.footer{
+			background-color: black;
+            color: white;
+            padding: 15px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<ul class="topmenu">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+	<div class="clearfix">
+		<div class="column sidemenu">
+			<ul>
+				<li><a href="#" class="active">The city</a></li>
+				<li><a href="#">Airport</a></li>
+				<li><a href="#">Sea</a></li>
+				<li><a href="#">Forest</a></li>
+				<li><a href="#">Stadium</a></li>
+				<li><a href="#">University</a></li>
+				<li><a href="#">The history</a></li>
+			</ul>
+		</div>
+		<div class="column content">
+			<div class="header">
+				<h1>The city</h1>
+			</div>
+			<h1>Chania</h1>
+			<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.
+			</p>
+            <p>You will learn more about responsive web pages in a later chapter.	</p>
+			
+		</div>
+	</div>
+	<div class="footer">
+		Footer text
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS CHEAT SHEET</title>
+	<style type="text/css">
+		body{
+			background-color: #448899;
+			margin: 150px;
+		}
+		h1{
+			text-align: center;
+		}
+		.container{
+			margin: auto;
+			width: 85%;
+		}
+		.box-1{
+			padding: 40px 60px 30px 60px;
+			background-color: #ffffff;
+			padding-left: 20px;
+			position: relative;
+		}
+	
+	</style>
+</head>
+<body>
+	<h1>Good Vibes Form</h1>
+	<form>
+		<div class="container">
+			<div class="box-1">
+				<div style="text-align: center;">
+				<h2 style="text-align: center;">Tell us something positive that happened to you today.</h2>
+				<label>Name:</label>
+				<input type="text" name="name" placeholder="Enter your name"><br><br>
+				<label>Email:</label>			   		    
+   				<input type="text" name="email" placeholder="Enter your email"><br><br>			    
+   				<label>Mobile:</label>
+   				<input type="text" name="Mobile no." placeholder="Enter your mobile no."><br><br>
+   			    </div>
+				<div style="padding-left: 420px;">
+					<label>Gender:</label>
+					<input type="radio" name="gender" value="Male">
+					<label>Male</label>
+					<input type="radio" name="gender" value="Female">
+					<label>Female</label>
+					<input type="radio" name="gender" value="Other">
+					<label>Other</label>
+				</div><br>
+				<div style="padding-left: 457px;">
+					<label>Age:</label>
+					<input type="number" name="age"  min="24" max="45" value="27">
+				</div><br>
+				<div style="padding-left: 181px;">
+					<label>How many no. you give it out of 10:</label>
+					<input type="number" name="no." min="1" max="10" value="5">
+				</div><br>
+				<div style="padding-left: 187px;">
+					<label>At what time of day did it happens?</label>
+					<select name="time">
+					<option>Mornng</option>
+					<option>Evening</option>
+					<option>Afternoon</option>
+				    </select>
+				</div><br>
+				<div style="padding-left: 301px;">
+					<label>Where did it happens?</label>
+					<select name="place">
+					<option>At home</option>
+					<option>At street</option>
+					<option>At workplace</option>
+                    <option>In playground</option>
+                    </select>
+				</div><br>
+				<div style="padding-left: 360px;">
+					<label>How u feeling?</label>
+                    <div style="padding-left: 140px;">
+					<input type="checkbox" value="Enthaustic">
+					<label>Enthaustic</label><br>
+					<input type="checkbox" value="Happy">
+					<label>Happy</label><br>
+					<input type="checkbox" value="Loved">
+                    <label>Loved</label><br>
+                    <input type="checkbox" value="shocked">
+                    <label>Shocked</label>
+                    </div>
+				</div><br>
+				<div style="padding-left: 172px;">
+					<label>Describe ur positive experience here-</label>
+					<textarea>
+						
+
+					</textarea>
+				</div><br>
+				<div style="text-align: center;">
+					<input type="submit" name="submit" value="Submit" style="background-color: #5577bb">
+				</div><br>
+
+			</div>
+			
+		</div>
+	</form>

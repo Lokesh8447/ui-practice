@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+    .signup {
+      font-size: 16px;
+      padding: 16px;
+   }
+
+   .signup__input-wrapper {
+       margin-bottom: 8px
+    }
+    .label{
+    	display: block;
+    }
+    .inp {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 8px;
+      min-width: 200px;
+    }
+
+	button{
+	   padding: 10px 20px;
+       font-size: inherit;
+       border: none;
+       border-radius: 3px;
+       background-color: #2980b9;
+       color: #fff;
+	}	
+	</style>
+</head>
+<body>
+  <form action="#" class="signup" id="signup">
+   <div class="signup__input-wrapper">
+     <label class="label" for="name">Name</label>
+     <input type="text" class="inp" id="name" required />
+   </div>
+   <div class="signup__input-wrapper">
+     <label class="label" for="email">Email</label>
+     <input type="email" class="inp" id="email" required/>
+   </div>
+   <div class="signup__input-wrapper">
+     <label for="password" class="label">Password</label>
+     <input type="password" class="inp" id="password" min-length="6" required/>
+   </div class="signup__input-wrapper">
+   <div>
+     <label class="label" for="confirm">Confirm Password</label>
+     <input type="password" class="inp" id="confirm" />
+   </div>
+   <div class="signup__input-wrapper">
+     <button type="submit" id="submit">Sign Up</button>
+   </div>
+   <div class="signup_errors" id="errors">
+   </div>
+ </form>
+ <script type="text/javascript">
+    const emailReg = /[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\\.[a-z0-9-]+)*/i
+
+	const form = document.getElementById('signup')
+    form.addEventListener('change', validateForm)
+
+    function validateForm(){
+    	var errors=[];
+    	if(!form.name.value){
+    		errors.push("Name is required")
+    	}
+    	if(!emailReg.test(form.email.value)){
+    		errors.push("Email is required")
+    	}
+    	if(!form.password.value || form.confirm.value.length < 6){
+    		errors.push("Password must be of 6 characters or more")
+    	}
+    	if(form.password.value !== form.confirm.value){
+    		errors.push("Password do not match")
+    	}
+       renderErrors(errors) 
+    }
+
+    function renderErrors (errors = []) {
+        const submitButton = document.getElementById('submit')
+        if (errors.length > 0) {
+        submitButton.disabled = true
+        errorTemplate = `<ul>
+        ${errors.map(error => `<li>${error}</li>`).join('')}
+      </ul>`
+
+        document.getElementById('errors').innerHTML = errorTemplate
+    } else {
+         submitButton.disabled = false
+       }
+    }
+</script>
+</body>
+</html>

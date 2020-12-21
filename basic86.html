@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic html 86</title>
+	<style type="text/css">
+		.main-container{
+			text-align: left;
+			display: block;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.row1{
+			background-color: rgba(0,0,0,0.8);
+		}
+		#header,#container,#footer{
+			display: block;
+			width: 960px;
+			margin: 0 auto;
+		}
+
+		#header #hgroup h1,h2{
+			color: gray;
+			font-weight: normal;
+			text-transform: none;
+		}
+		#header #hgroup h1{
+			font-size: 36px;
+			margin-top: 10px;
+		}
+		#hgroup{
+			float: left;
+			margin:0 0 20px 0;
+		}
+		.clear{
+			clear: both;
+		}
+		#header{
+          padding: 20px 0;
+		}
+		h1,h2{
+			line-height: normal;
+			margin: 0;
+			padding:0;
+		}
+
+	#header nav{
+		display: block;
+		float:right;
+		background-color: black;
+		margin: 10px 0 0 0;
+		padding: 20px 0;
+
+	}
+	nav ul{
+		list-style: none;
+		margin: 0;
+		padding: 0 20px;
+	}
+	nav li{
+		display: inline;
+		margin-right: 25px;
+	}
+	nav li a{
+		color:gray;
+		text-align: center;
+		text-decoration: none;
+
+	}
+	nav li a:hover{
+		color: yellow;
+		opacity: 0.8;
+	}
+	.clear:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+	}
+	.row2{
+		color: #979797;
+		background-color: #fff;
+	}
+	#container{
+		padding: 30px 0;
+	}
+	#container section{
+		display: block;
+		width: 100%;
+		margin: 0 0 50px 0;
+		padding: 0;
+	}
+	#container #slider figure img{
+        float: right;
+        width: 630px;
+        height: 300px;
+	}
+    article, figcaption, figure, footer, header, nav, section {
+    display: block;
+    margin: 0;
+    padding: 0;
+    }
+	#container #slider figure figcaption{
+		display: block;
+		float: left;
+		width: 280px;
+		height: 260px;
+		padding: 20px;
+		overflow: hidden;
+		color: #989898;
+		line-height: 1.6em;
+		background-color: #DEDEDE;
+		
+	}
+	#container #slider figure h2{
+		font-size: 42px;
+		font-weight: normal;
+		font-style: italic;
+	}
+	.more{
+        text-align: right;}
+    .more a{    
+        color:yellow;
+        opacity: 0.8;
+    }
+	#container #homepage{
+		display: block;
+		width: 100%;
+		line-height: 1.6em;
+	}
+	.one-third{
+		width: 300px;
+	}
+	.one-third,.two-third,.three-third{
+		display: block;
+		float: left;
+		margin: 0 30px 0 0;
+	}
+	#container #homepage #services article img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 10px 0;
+    padding: 4px;
+    border: 1px solid #DEDEDE;
+	 }
+	 #container #homepage #services article footer {
+    margin: 10px 0 0 0;
+     }
+     article{
+     	padding: 0;
+     }
+     .last{margin: 0;}
+     .lastbox{
+     	margin-right: 0;
+     }
+     .one-quarter{
+     	width: 220px;
+     	display: block;
+        float: left;
+        margin: 0 20px 0 0;
+     }
+     
+     .footerlast{
+     	background-color: black;
+     	padding: 15px;
+     }
+     .footerlast p {
+     	color: gray;
+     	margin-left :480px;
+     }
+	</style>
+</head>
+<body>
+	<div class="main-container row1">
+		<div id="header" class="clear">
+			<div id="hgroup">
+			<h1>Basic 86</h1>
+			<h2>Free HTML5 Website Template</h2>
+	        </div>	
+	
+		<nav>
+			<ul>
+				<li><a href="#">TEXT LINK</a></li>
+				<li><a href="#">TEXT LINK</a></li>
+				<li><a href="#">TEXT LINK</a></li>
+				<li><a href="#">TEXT LINK</a></li>
+				<li><a href="#">TEXT LINK</a></li>
+			</ul>
+		</nav>
+	    </div>
+	</div>
+	<div class="main-container row2">
+		<div id="container" class="clear">
+			<section id="slider" class="clear">
+				<figure>
+					<img src="css/black.gif">
+				   <figcaption>
+				   	<h2>Eu justo augue estas</h2>
+				   	<p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.  </p>
+				   </figcaption>
+				</figure>
+			</section>
+			<div id="homepage">
+				<section id="services" class="clear">
+					<article class="one-third">
+						<h2>LORUM IPSUM DOLOR</h2>
+						<img src="css/80.gif">
+						<p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet condimentumst phasellentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet.</p>
+						<footer class="more">
+							<a href="#">Read more >></a>
+						</footer>
+					</article>
+					<article class="one-third">
+						<h2>LORUM IPSUM DOLOR</h2>
+						<img src="css/80.gif">
+						<p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet condimentumst phasellentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet.</p>
+						<footer class="more">
+							<a href="#">Read more >></a>
+						</footer>
+					</article>
+					<article class="one-third lastbox">
+						<h2>LORUM IPSUM DOLOR</h2>
+						<img src="css/80.gif">
+						<p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet condimentumst phasellentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet.</p>
+					</article>
+					<footer class="more">
+					<a href="#"> Read more>></a>
+					</footer>
+				</section>
+				<section id="latest" class="last clear">
+					<article class="one-quarter">
+						<figure>
+							<img src="css/215.gif" width="215" height="100">
+							<figcaption>
+								<h2>INDONECTETUS FACILIS</h2>
+								<p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+								<footer class="more">
+									<a href="#">Read more>></a>
+								</footer>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="one-quarter">
+						<figure>
+							<img src="css/215.gif" width="215" height="100">
+							<figcaption>
+								<h2>INDONECTETUS FACILIS</h2>
+								<p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+								<footer class="more">
+							<a href="#">Read more >></a>
+						</footer>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="one-quarter">
+						<figure>
+							<img src="css/215.gif" width="215" height="100">
+							<figcaption>
+								<h2>INDONECTETUS FACILIS</h2>
+								<p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+								<footer class="more">
+							<a href="#">Read more >></a>
+						</footer>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="one-quarter lastbox">
+						<figure>
+							<img src="css/215.gif" width="215" height="100">
+							<figcaption>
+								<h2>INDONECTETUS FACILIS</h2>
+								<p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+								<footer class="more">
+							    <a href="#"> Read more >></a>
+						        </footer>
+							</figcaption>
+						</figure>
+					</article>
+				</section>
+			</div>
+		</div>
+		<div class="footerlast">
+			<p>Copyright @ 2009 - 2020 - All Right Reserved - Domain Name                  Template By OS Templates</p>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+		<style type="text/css">
+		body{
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+		}	
+		.container {
+               display: flex;
+               flex-grow: 1;
+               background-color: #F3F5F9;
+        }
+	    nav {
+               flex: 0 0 20%;
+               background-color: #fff;
+               border-right: 1px solid #D4D5DC;
+        }
+        nav ul{
+        	list-style-type: none;
+        	padding: 0;
+        	margin: 0;
+        }
+        nav li a{
+            display: block;
+            margin-left: 0;
+            padding: 20px;
+            text-decoration: none;
+            border-bottom: 1px solid lightgray;
+            color: gray;
+        }
+        nav li a:hover{
+        	color: #2EC79F;
+        	background-color: #F8F8FC;
+        }
+        .middle{
+        	flex-grow: 1;
+        	padding: 20px;
+        }
+        .post{
+        	padding: 20px;
+        	border-radius: 4px;
+        	max-width: 800px;
+        	margin: 0 auto;
+        	border:1px solid lightgray;
+        	margin-bottom: 20px;
+        }
+        .title{
+        	color: #2EC79F;
+        	margin:0 0 20px 0;
+        	font-weight: 500;
+        }
+        .aside {
+            flex: 0 0 15%;
+            flex-grow: 0;
+            background-color: #fff;
+            padding: 25px;
+            border-left: 1px solid #D4D5DC;  
+        }
+        .asidecontent {
+           border: 2px solid #ebedee;
+           padding: 35px 25px;
+           margin-bottom: 25px;
+           text-align: center;
+        }
+
+        .footer{
+        	padding: 32px;
+        	color: black;
+        	background-color: #222;
+        }
+
+        .footerlinks p{
+        	text-align: right;
+        	color: white;
+        }
+
+
+		</style>
+</head>
+<body>
+	<div class="container">
+		<nav >
+			<ul>
+				<li> <a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</nav>
+        <div class="middle">
+        	<article class="post">
+        			<h2 class="title">BLOG POST 1</h2>
+        			<P>This is the Post Content.</P>
+        	</article>
+        	<article class="post">
+        			<h2 class="title">BLOG POST 1</h2>
+        			<P>This is the Post Content.</P>
+        	</article>
+        	<article class="post">
+        			<h2 class="title">BLOG POST 1</h2>
+        			<P>This is the Post Content.</P>
+        	</article>
+        </div>
+        <div class="aside">
+        	<div class="asidecontent">AD</div>
+        	<div class="asidecontent">AD</div>
+        </div>
+	</div>
+	<div class="footer">
+        <div class="footerlinks">
+            <p>About</p>
+            <p>Contact</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>  
+        </div>
+        </div>
+
+
+</body>
+</html>

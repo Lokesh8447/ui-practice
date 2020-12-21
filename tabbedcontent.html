@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabbed Content</title>
+	<style type="text/css">
+		.main{
+			width: 100%;
+		}
+		.inp{
+			float: left;
+			font-size: 20px;
+            padding: 25px 20px;
+            border-collapse: collapse;
+		}
+		.content{
+			padding: 80px 40px;
+			border: 1px solid lightgray;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+  <input type="button" class="inp" value="Description" onclick="myfunc()">
+  <input type="button" class="inp" value="Specs" onclick="somefunc()">
+  <input type="button" class="inp" value="Reviews" onclick="review()">
+</div>
+<div class="content">
+<p id="demo"></p>
+</div>
+  <script type="text/javascript">
+  	function myfunc(){
+  		document.getElementById('demo').innerHTML = "The worlds fastest fidget spinner";
+  	}
+  	function somefunc(){
+  		document.getElementById("demo").innerHTML ="Slime green, low friction ball bearings, with dual finger grips.";
+  	}
+  	function review(){
+  		document.getElementById("demo").innerHTML="I have one. It's pretty good."
+  	}
+  </script>
+</body>
+</html>

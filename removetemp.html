@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div>
+		<input type="text" id="abc" >
+	    <button onclick="myFunc()">Remove</button>
+		<input type="text" id="demo">
+	</div><br>
+	<div>
+		<input type="text" id="xyz">
+		<button onclick="count()">Click</button>
+	</div>
+	<p  id="demo2"> </p>
+
+
+  <script type="text/javascript">
+  	function myFunc(){
+  		var str = document.getElementById("abc").value;
+        document.getElementById("demo").value = str;
+  }
+  	function count(){
+  		var dataset = document.getElementById("xyz").value;
+        var counts = {}, i, value;
+        for (i = 0; i < dataset.length; i++) {
+        value = dataset[i];
+        if (typeof counts[value] === "undefined") {
+        counts[value] = 1;
+        } else {
+        counts[value]++;
+        }
+        }
+        document.getElementById("demo2").innerHTML = console.log(counts);
+    }
+  	
+  </script>
+</body>
+</html>

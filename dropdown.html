@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown</title>
+	<style type="text/css">
+		
+.nav {
+  overflow: hidden;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.alink {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+}
+.dropdown{
+	position: relative;
+}
+.dropdown_menu {
+    position: absolute;
+    display: block;
+    min-width: 100%;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+#lists{
+	position: absolute;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+	</style>
+</head>
+<body>
+<nav class="nav">
+  <ul>
+    <li><a class="alink" href="#">Home</a></li>
+    <li><a class="alink" href="#">Contact</a></li>
+    <li class="dropdown">
+      <a href="#" id="dropdown" class="alink" onclick="getList()">Dropdown</a></li>
+      <div class="dropdown_menu"><a id="lists"></a></div>
+  </ul>
+</nav>
+<script type="text/javascript">
+	function getList(){
+       document.getElementById('lists').innerHTML = "<li><a href='#'>Item</a></li> <li><a href='#'>Item</a></li>   <li><a href='#'>Item</a></li>"
+	}
+</script>
+</body>
+</html>

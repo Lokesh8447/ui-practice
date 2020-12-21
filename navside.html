@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Nav side</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.header,.footer{
+			background-color: gray;
+			padding:15px;
+		}
+		.menu{
+			width: 25%;
+		}
+		.content{
+			width: 75%;
+		}
+		.clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+		}
+		.column{
+			float: left;
+			padding: 15px;
+		}
+		.menu ul{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+		}
+		.menu li{
+			background-color: lightblue;
+			padding: 8px;
+			margin-bottom: 8px;
+			color: white;
+		}
+		.menu li a{
+			text-decoration: none;
+			padding: 8px;
+		}
+		.menu li::hover{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+	<div class="clearfix">
+		<div class="column menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+		</div>
+		<div class="column content">
+			<p>Here is all u want nd u get every news u want it's depend on u what type of news u want to see , nd here is all about us u can read about us knowmore about us.</p>
+			<p>nd here is a way not to get on the here is the same role upon something or something not happened on their distanct.</p>
+			
+		</div>
+	</div>
+	<div class="footer">
+		<h1>Footer</h1>
+	</div>
+
+</body>
+</html>

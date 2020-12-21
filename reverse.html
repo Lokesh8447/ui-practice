@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var str;
+	function reverseStr(str){
+		if('string' !== typeof str){
+			return;
+		}
+		let s='';
+		for(let l=str.length - 1; l >= 0; l-- ){
+			s = s + str[l];
+		}
+		return s;
+	}
+	document.write(reverseStr("Lokesh"))
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+      .container{
+         width: 1000px;
+         display: inline-block;
+      }
+      .one_half{
+      	width: 450px;
+      }
+      .first{
+      	float: left;
+      }
+      .last{
+      	float: right;
+      	margin-top: 20px;
+      }
+      ul#list{
+      	list-style: none;
+      }
+
+	</style>
+</head>
+<body>
+    <form>
+     <div class="container">
+    	<div class="one_half first">
+    		Select Date<input type="date" name="date" id="xyz" onchange="myFunction()" >
+    	</div>
+    	<div class="one_half last">
+    		<input type="text"  id="demo">
+    	</div>
+     </div>
+     <div class="container">
+    	<div class="one_half first">
+    		Select Color<input type="Color" name="color" id="selectColor" onchange="someFunc()">
+    	</div>
+    	<div class="one_half last">
+    		<input type="text" id="demo2">
+    	</div>
+     </div>
+     <div>
+     <input type="button" onclick="addfields()" value="ADD+">
+     <ul id="list">
+     	<li id="Element"></li>
+     </ul>
+     </div>
+
+ <script type="text/javascript">
+    	function myFunction(){
+        var date = document.getElementById('xyz').value;
+        document.getElementById('demo').value = date;
+     }
+     function someFunc(){
+     	var Color = document.getElementById('selectColor').value;
+        document.getElementById('demo2').value = Color;
+     }
+     function addfields(){
+     	var ul = document.getElementById("list");
+     	var li = document.createElement("li");
+     	var input = document.createElement("input");
+     	var children = ul.children.length
+     	li.appendChild(document.createTextNode("Field" + children));
+        li.appendChild(input);
+     	ul.appendChild(li);
+     }
+
+</script>
+</form>
+</body>
+</html>	
